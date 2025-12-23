@@ -1,0 +1,17 @@
+# Python environments
+.venv/
+.env/
+__pycache__/
+*.pyc
+
+# Data artefacts
+data/
+Technical Content/
+
+# Jupyter clutter
+.ipynb_checkpoints/
+.notebook_cache/
+
+# OS noise
+.DS_Store
+Thumbs.db
