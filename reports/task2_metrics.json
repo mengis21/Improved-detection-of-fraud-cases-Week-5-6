@@ -1,0 +1,114 @@
+{
+  "fraud_data": {
+    "logistic_regression": {
+      "test": {
+        "f1": 0.2745029647715382,
+        "average_precision": 0.4759036744453999,
+        "confusion_matrix": [
+          [
+            7053,
+            3823
+          ],
+          [
+            337,
+            787
+          ]
+        ],
+        "positive_support": 1124,
+        "negative_support": 10876
+      },
+      "cross_validation": {
+        "f1_mean": 0.27570217374012396,
+        "f1_std": 0.004434573812885126,
+        "average_precision_mean": 0.4607891983588061,
+        "average_precision_std": 0.016327971417214253
+      },
+      "best_params": null
+    },
+    "random_forest": {
+      "test": {
+        "f1": 0.7120778477389811,
+        "average_precision": 0.6377720310404559,
+        "confusion_matrix": [
+          [
+            10875,
+            1
+          ],
+          [
+            502,
+            622
+          ]
+        ],
+        "positive_support": 1124,
+        "negative_support": 10876
+      },
+      "cross_validation": {
+        "f1_mean": 0.7016586549482066,
+        "f1_std": 0.010354383526002476,
+        "average_precision_mean": 0.6305811725682442,
+        "average_precision_std": 0.011962423359230706
+      },
+      "best_params": {
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 3
+      }
+    }
+  },
+  "creditcard": {
+    "logistic_regression": {
+      "test": {
+        "f1": 0.12297734627831715,
+        "average_precision": 0.717486536620139,
+        "confusion_matrix": [
+          [
+            11710,
+            269
+          ],
+          [
+            2,
+            19
+          ]
+        ],
+        "positive_support": 21,
+        "negative_support": 11979
+      },
+      "cross_validation": {
+        "f1_mean": 0.11981730515538627,
+        "f1_std": 0.006733651092893888,
+        "average_precision_mean": 0.797604076991385,
+        "average_precision_std": 0.04781600686461214
+      },
+      "best_params": null
+    },
+    "random_forest": {
+      "test": {
+        "f1": 0.7804878048780488,
+        "average_precision": 0.7691142558727027,
+        "confusion_matrix": [
+          [
+            11975,
+            4
+          ],
+          [
+            5,
+            16
+          ]
+        ],
+        "positive_support": 21,
+        "negative_support": 11979
+      },
+      "cross_validation": {
+        "f1_mean": 0.8009246088193457,
+        "f1_std": 0.05016337841526599,
+        "average_precision_mean": 0.8463928821386123,
+        "average_precision_std": 0.049628948386595276
+      },
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 1
+      }
+    }
+  }
+}
