@@ -7,7 +7,7 @@ This repository houses my solution for Adey Innovations' blended e-commerce and 
 ```
 .
 ├── data/               # Raw files (ignored) and processed artefacts
-├── notebooks/          # Exploratory notebooks (documented, not yet tracked)
+├── notebooks/          # Exploratory notebooks
 ├── reports/            # Generated figures, metrics JSON, narrative drafts
 ├── scripts/            # Reproducible data preparation and EDA routines
 ├── src/                # Reusable preprocessing/helpers
@@ -35,8 +35,6 @@ Key scripts:
     pip install -r requirements.txt
     ```
 
-2. Place the provided CSVs into `data/raw/` (see `scripts/README.md`).
-
 ## Running the Pipelines
 
 - **Task 1 – Data Preparation & EDA**
@@ -57,14 +55,12 @@ Key scripts:
    ```
    Outputs: SHAP summaries and force plots under `reports/images/` plus the consolidated report [reports/task3_shap_summary.json](reports/task3_shap_summary.json).
 
-All scripts expect the processed datasets from Task 1; rerun Task 1 if the `data/processed/` directory is empty.
 
 ## Deliverables Snapshot
 
 - **Task 1**: Cleaning, geolocation enrichment, feature engineering, SMOTE preview. Visuals reside in `reports/images/`.
 - **Task 2**: Stratified modeling with Logistic Regression baseline and tuned Random Forest, metrics logged to JSON for reproducible grading.
 - **Task 3**: SHAP global/individual explanations and feature-importance comparisons for both datasets.
-- **Narratives**: Interim and final report drafts are stored under `reports/` (e.g., [reports/Interim_Report.md](reports/Interim_Report.md), [reports/Final_Report.md](reports/Final_Report.md)).
 
 ## Roadmap
 
