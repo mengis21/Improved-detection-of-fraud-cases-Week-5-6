@@ -1,0 +1,374 @@
+{
+  "fraud_data": {
+    "f1": 0.7120778477389811,
+    "average_precision": 0.6377720310404559,
+    "feature_importance": [
+      {
+        "feature": "numeric__time_since_signup_hours",
+        "importance": 0.60639648575864
+      },
+      {
+        "feature": "numeric__purchase_value",
+        "importance": 0.10564001587431832
+      },
+      {
+        "feature": "numeric__age",
+        "importance": 0.09490753981247564
+      },
+      {
+        "feature": "numeric__hour_of_day",
+        "importance": 0.08545124377067963
+      },
+      {
+        "feature": "categorical__browser_chrome",
+        "importance": 0.008065781918917528
+      },
+      {
+        "feature": "categorical__source_seo",
+        "importance": 0.007643605523521604
+      },
+      {
+        "feature": "categorical__browser_ie",
+        "importance": 0.007511779655864811
+      },
+      {
+        "feature": "categorical__sex_m",
+        "importance": 0.007502237542096881
+      },
+      {
+        "feature": "categorical__source_ads",
+        "importance": 0.007440724228794648
+      },
+      {
+        "feature": "categorical__sex_f",
+        "importance": 0.00733152382880011
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "numeric__time_since_signup_hours",
+        "mean_abs_shap": 0.0850924227594329
+      },
+      {
+        "feature": "numeric__hour_of_day",
+        "mean_abs_shap": 0.01860847744167525
+      },
+      {
+        "feature": "categorical__day_of_week_Tuesday",
+        "mean_abs_shap": 0.01619174600529632
+      },
+      {
+        "feature": "numeric__purchase_value",
+        "mean_abs_shap": 0.014940899527656497
+      },
+      {
+        "feature": "numeric__age",
+        "mean_abs_shap": 0.014701704685181345
+      },
+      {
+        "feature": "categorical__day_of_week_Wednesday",
+        "mean_abs_shap": 0.013213418135397451
+      },
+      {
+        "feature": "categorical__day_of_week_Thursday",
+        "mean_abs_shap": 0.01132014164802307
+      },
+      {
+        "feature": "categorical__browser_chrome",
+        "mean_abs_shap": 0.008528256302473388
+      },
+      {
+        "feature": "categorical__browser_safari",
+        "mean_abs_shap": 0.008039072418917688
+      },
+      {
+        "feature": "categorical__sex_m",
+        "mean_abs_shap": 0.007786276319633955
+      }
+    ],
+    "examples": {
+      "true_positive": {
+        "prediction": 1,
+        "probability": 0.9932564560880455,
+        "actual": 1,
+        "top_contributors": [
+          {
+            "feature": "numeric__time_since_signup_hours",
+            "value": -1.5767787558133288,
+            "shap_value": 0.6889619839058511
+          },
+          {
+            "feature": "numeric__purchase_value",
+            "value": -0.2710422730202035,
+            "shap_value": 0.024078083174856345
+          },
+          {
+            "feature": "numeric__hour_of_day",
+            "value": 0.9442973048523284,
+            "shap_value": 0.020445786068097303
+          },
+          {
+            "feature": "categorical__day_of_week_Wednesday",
+            "value": 1.0,
+            "shap_value": -0.014013737849329392
+          },
+          {
+            "feature": "categorical__day_of_week_Tuesday",
+            "value": 0.0,
+            "shap_value": 0.00722165937491206
+          }
+        ]
+      },
+      "false_positive": {
+        "prediction": 1,
+        "probability": 0.5460446668962043,
+        "actual": 0,
+        "top_contributors": [
+          {
+            "feature": "numeric__hour_of_day",
+            "value": 0.5110768221225653,
+            "shap_value": 0.07551022008562608
+          },
+          {
+            "feature": "numeric__purchase_value",
+            "value": 1.364684951945612,
+            "shap_value": 0.06128545406389582
+          },
+          {
+            "feature": "numeric__age",
+            "value": 1.9646852139807183,
+            "shap_value": 0.06112220885477915
+          },
+          {
+            "feature": "numeric__time_since_signup_hours",
+            "value": 1.386655765028155,
+            "shap_value": 0.05367103384026244
+          },
+          {
+            "feature": "categorical__day_of_week_Wednesday",
+            "value": 1.0,
+            "shap_value": -0.02972855043804785
+          }
+        ]
+      },
+      "false_negative": {
+        "prediction": 0,
+        "probability": 0.13961550170767406,
+        "actual": 1,
+        "top_contributors": [
+          {
+            "feature": "numeric__time_since_signup_hours",
+            "value": 0.28287037752660504,
+            "shap_value": -0.07127920101117324
+          },
+          {
+            "feature": "numeric__age",
+            "value": -1.5182888726720623,
+            "shap_value": -0.04219086262011858
+          },
+          {
+            "feature": "categorical__day_of_week_Friday",
+            "value": 1.0,
+            "shap_value": -0.02326232370177392
+          },
+          {
+            "feature": "categorical__source_ads",
+            "value": 1.0,
+            "shap_value": -0.012646269214963111
+          },
+          {
+            "feature": "categorical__source_seo",
+            "value": 0.0,
+            "shap_value": 0.01231130809952772
+          }
+        ]
+      }
+    }
+  },
+  "creditcard": {
+    "f1": 0.7804878048780488,
+    "average_precision": 0.7691142558727027,
+    "feature_importance": [
+      {
+        "feature": "numeric__V14",
+        "importance": 0.17596208320730589
+      },
+      {
+        "feature": "numeric__V10",
+        "importance": 0.11573949542355762
+      },
+      {
+        "feature": "numeric__V12",
+        "importance": 0.11091770508038482
+      },
+      {
+        "feature": "numeric__V17",
+        "importance": 0.09755773720161251
+      },
+      {
+        "feature": "numeric__V4",
+        "importance": 0.08532974814596116
+      },
+      {
+        "feature": "numeric__V16",
+        "importance": 0.06111894422082979
+      },
+      {
+        "feature": "numeric__V3",
+        "importance": 0.05339191602231801
+      },
+      {
+        "feature": "numeric__V11",
+        "importance": 0.0380607307101323
+      },
+      {
+        "feature": "numeric__V7",
+        "importance": 0.03438712056665604
+      },
+      {
+        "feature": "numeric__V2",
+        "importance": 0.03408094108928405
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "numeric__V22",
+        "mean_abs_shap": 0.0001625
+      },
+      {
+        "feature": "numeric__V8",
+        "mean_abs_shap": 0.00014000000000000004
+      },
+      {
+        "feature": "numeric__V26",
+        "mean_abs_shap": 0.00012125000000000002
+      },
+      {
+        "feature": "numeric__V14",
+        "mean_abs_shap": 0.00010708333333332216
+      },
+      {
+        "feature": "numeric__V4",
+        "mean_abs_shap": 9.874999999999999e-05
+      },
+      {
+        "feature": "numeric__V15",
+        "mean_abs_shap": 9.625000000000001e-05
+      },
+      {
+        "feature": "numeric__Time",
+        "mean_abs_shap": 9.125000000000001e-05
+      },
+      {
+        "feature": "numeric__V21",
+        "mean_abs_shap": 8.875000000000002e-05
+      },
+      {
+        "feature": "numeric__V17",
+        "mean_abs_shap": 6.75e-05
+      },
+      {
+        "feature": "numeric__V27",
+        "mean_abs_shap": 6.500000000000001e-05
+      }
+    ],
+    "examples": {
+      "true_positive": {
+        "prediction": 1,
+        "probability": 0.6,
+        "actual": 1,
+        "top_contributors": [
+          {
+            "feature": "numeric__V8",
+            "value": 0.39628046578134674,
+            "shap_value": 0.06499999999999999
+          },
+          {
+            "feature": "numeric__V22",
+            "value": 0.19847906743405683,
+            "shap_value": 0.05999999999999999
+          },
+          {
+            "feature": "numeric__V13",
+            "value": 0.11184426537273792,
+            "shap_value": 0.045
+          },
+          {
+            "feature": "numeric__V27",
+            "value": -2.393896361513532,
+            "shap_value": 0.035
+          },
+          {
+            "feature": "numeric__Amount",
+            "value": -0.3354526960989637,
+            "shap_value": 0.030000000000000002
+          }
+        ]
+      },
+      "false_positive": {
+        "prediction": 1,
+        "probability": 0.87,
+        "actual": 0,
+        "top_contributors": [
+          {
+            "feature": "numeric__V22",
+            "value": 1.0768099004200902,
+            "shap_value": 0.09500000000000001
+          },
+          {
+            "feature": "numeric__V26",
+            "value": -0.5515940391914654,
+            "shap_value": 0.085
+          },
+          {
+            "feature": "numeric__V8",
+            "value": 0.5718924652714626,
+            "shap_value": 0.05499999999999999
+          },
+          {
+            "feature": "numeric__V4",
+            "value": 1.7592686722512934,
+            "shap_value": 0.049999999999999996
+          },
+          {
+            "feature": "numeric__V15",
+            "value": -1.2320909905110444,
+            "shap_value": 0.049999999999999996
+          }
+        ]
+      },
+      "false_negative": {
+        "prediction": 0,
+        "probability": 0.25,
+        "actual": 1,
+        "top_contributors": [
+          {
+            "feature": "numeric__V8",
+            "value": -0.45861187820441035,
+            "shap_value": 0.035
+          },
+          {
+            "feature": "numeric__V2",
+            "value": -1.5087938634586593,
+            "shap_value": 0.02
+          },
+          {
+            "feature": "numeric__V22",
+            "value": 0.12415353463329822,
+            "shap_value": 0.02
+          },
+          {
+            "feature": "numeric__V17",
+            "value": -3.7348126859424475,
+            "shap_value": 0.02
+          },
+          {
+            "feature": "numeric__Time",
+            "value": 0.8052649638307835,
+            "shap_value": 0.015
+          }
+        ]
+      }
+    }
+  }
+}
